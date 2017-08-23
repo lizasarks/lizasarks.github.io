@@ -1,0 +1,323 @@
+/* Box Model Hack */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: block;
+} 
+.clearfix:after {
+    clear: both;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.nav{
+	float:right;
+}
+
+.navbar{
+	background-color: white;
+	color: black;
+}
+
+a {
+    color: black;
+}
+
+.navbar-brand>img {
+    display: block;
+    height: 150px;
+}
+
+
+#picture{
+  float: left;
+  width: 35%; 
+  margin-left: -100px;
+  margin-top: 6px
+}
+
+
+#image{
+  background: url(../images/HERO-BG.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 50px;
+  background-attachment: fixed;
+  
+  
+
+
+}
+
+.text1{
+color:#083047;
+padding: 20px;
+width: 65%;
+float: right;
+font-family: inherit;
+}
+
+#button1{
+	background: #083047;
+	border-radius: 2px;
+  	font-weight: 500px;
+  	padding: 10px 10px 10px;
+    width: 36%;
+  	font-size: 16px;
+  	text-align: center;
+  	color: white;
+  	display:block;
+    float: left;
+    margin: 15px;
+}
+
+#button2{
+  background: #083047;
+  border-radius: 2px;
+    font-weight: 500px;
+    padding: 5px 0;
+    width: 25%;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    display:block;
+    float: right;
+}
+
+.jumbotron {
+	padding: 2px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #eee;
+    display: block;
+    overflow: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.mainbanner{
+/*background: #fff;*/
+color:black;
+padding: 20px 20px 20px;
+width: 50%;
+float: left;
+}
+
+/*img{
+	width: 100%;
+  height: 50%;
+}*/
+
+
+.expertiseimg{
+	float: right;
+	padding: 20px 20px 20px;
+  height: 60%;
+}
+
+.holder {
+  position:relative;
+  overflow:hidden;
+  width: 48%;
+}
+.holder img {
+  display:block;
+}
+#info {
+  position:absolute;
+  width:100%;
+  background:rgba(0,0,0,0.5);
+  bottom:-40px;
+  opacity:0;
+  transition:bottom 0.3s, opacity 0.3s;
+}
+.holder:hover .info {
+  bottom:0;
+  opacity:1;
+}
+
+
+
+/*#services{
+  background: url(../images/image2.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  clear: both;
+  height: 400px;
+}
+*/
+
+
+
+#button2{
+  background: #ff8080;
+  border-radius: 2px;
+    font-weight: 500px;
+    padding: 5px 0;
+    width: 25%;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    clear: both;
+}
+
+
+
+.sarkscopy{
+  float: right;
+  width: 35%;
+}
+
+.me{
+  width: 100%;
+  float: right;
+}
+
+
+#aboutimg{
+  width: 60%;
+}
+
+
+#contact_form{
+   background: url(../images/image1.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  clear: both;
+ /* height: 600px;*/
+    display: block;
+    overflow: auto;
+    opacity: 0.5;
+
+}
+
+
+.videocontainer{
+  position: relative;
+  top: 0;
+  left: 0;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+video{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+.servicescopy{
+/*background: #fff;*/
+color:black;
+padding: 20px;
+width: 85%;
+text-align: center;
+clear: both;
+position: absolute;
+top: 26%;
+left: 35px;
+}
+
+#button3{
+  background: #ff8080;
+  border-radius: 2px;
+    font-weight: 500px;
+    padding: 5px 0;
+    width: 25%;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    clear: both;
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+		
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*CONTACT FORM*/
+
+#success_message{ display: none;}
+
+
+
+/*CONTACT FORM*/
+
