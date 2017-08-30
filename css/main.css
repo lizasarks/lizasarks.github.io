@@ -28,6 +28,7 @@ body {
 }
 
 
+
 .nav{
 	float:right;
 }
@@ -46,12 +47,30 @@ a {
     height: 150px;
 }
 
+h4{
+  font-size: 15px;
+  color: #083047;
+}
+
+h3{
+  font-size: 18px;
+  color: #083047;
+}
+
+#sarkslogo{
+  float: right;
+ height: 100px;
+ display: block;
+   /* overflow: auto;*/
+
+}
+
 
 #picture{
   float: left;
   width: 35%; 
   margin-left: -100px;
-  margin-top: 6px
+  margin-top: 38px
 }
 
 
@@ -60,11 +79,61 @@ a {
   background-size: cover;
   padding: 50px;
   background-attachment: fixed;
-  
+  }
   
 
-
+/*HOVER NAV  */
+.navbar-nav div{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    text-align: center;
 }
+
+.navbar-nav img{
+width: 90%;
+opacity: 0;
+}
+
+#expertise:hover #exp{
+opacity: 0;
+}
+
+
+#expertise:hover img{
+opacity: 1;
+}
+
+#services:hover #ser{
+opacity: 0;
+}
+
+
+#services:hover img{
+opacity: 1;
+}
+
+#aboutme:hover #abo{
+opacity: 0;
+}
+
+
+#aboutme:hover img{
+opacity: 1;
+}
+
+#contact:hover #con{
+opacity: 0;
+}
+
+
+#contact:hover img{
+opacity: 1;
+}
+
+/*HOVER NAV  */
+
 
 .text1{
 color:#083047;
@@ -101,6 +170,7 @@ font-family: inherit;
     float: right;
 }
 
+
 .jumbotron {
 	padding: 2px;
     margin-bottom: 10px;
@@ -112,6 +182,8 @@ font-family: inherit;
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
 }
 
 
@@ -128,12 +200,88 @@ float: left;
   height: 50%;
 }*/
 
+#expertisetext{
+clear: both;
+width: 58%;
+margin-left: 36px;
+}
+
+#servicestext{
+width: 35%;
+}
+
+legend{
+  text-align: center;
+}
+
+#abouttext{
+width: 44%;
+margin-top: 100%;
+padding: 10px;
+}
+
+#contacttext{
+width: 22%;
+}
+
+#icon1{
+  width: 13%;
+  margin-top: -63px;
+  margin-left: 36px;
+}
+
+/*HOVER IMG FUNCTION*/
+
+.expcon{
+  position: relative;
+  float: right;
+  width: 50%;
+}
 
 .expertiseimg{
 	float: right;
 	padding: 20px 20px 20px;
   height: 60%;
 }
+
+#ideasimg{
+  float: right;
+/*  padding: 20px 20px 20px;*/
+  height: 60%;
+}
+
+.hoverContainer {
+  display:block;
+}
+
+.hover{
+  position:absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+}
+.hover img {
+  width: 100%;
+}
+
+.content {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.content img {
+  width: 100%;
+}
+
+.hoverContainer:hover .hover {
+  z-index: 2;
+}
+
+/*HOVER IMG FUNCTION*/
 
 .holder {
   position:relative;
@@ -153,7 +301,7 @@ float: left;
 }
 .holder:hover .info {
   bottom:0;
-  opacity:1;
+  opacity:2;
 }
 
 
@@ -200,14 +348,14 @@ float: left;
 
 
 #contact_form{
-   background: url(../images/image1.jpg) no-repeat center center;
+   background: url(../images/CONTACT-BACKGROUND.jpg) no-repeat center center;
   background-size: cover;
   width: 100vw;
   clear: both;
  /* height: 600px;*/
     display: block;
     overflow: auto;
-    opacity: 0.5;
+    background-attachment: fixed;
 
 }
 
@@ -216,10 +364,11 @@ float: left;
   position: relative;
   top: 0;
   left: 0;
-    height: 400px;
+    height: 410px;
     overflow: hidden;
     display: block;
     width: 100%;
+    z-index: 3;
 }
 
 video{
@@ -232,7 +381,7 @@ video{
 .servicescopy{
 /*background: #fff;*/
 color:black;
-padding: 20px;
+padding: 10px;
 width: 85%;
 text-align: center;
 clear: both;
@@ -245,6 +394,7 @@ left: 35px;
   background: #ff8080;
   border-radius: 2px;
     font-weight: 500px;
+    margin-top: 15px;
     padding: 5px 0;
     width: 25%;
     font-size: 16px;
@@ -253,6 +403,15 @@ left: 35px;
     clear: both;
 }
 
+#footerlogo{
+    width: 20%;
+    margin-left: 73px;
+}
+
+
+#contactbutton{
+background: #ff8080;
+}
 
 
 /*==========  Mobile First Method  ==========*/

@@ -15,7 +15,13 @@
 
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <script src="js/custom.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+
     </head>
 
 
@@ -32,19 +38,31 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">SARKS LOGO</a>
+            <a class="navbar-brand" href="#image"><img src="images/SARKS-LOGO-VECTOR.png" alt="sarkslogo" id="sarkslogo"></a>
           </div>
+
+
 
 
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li id="expertise"><a href="#">EXPERTISE |</a></li>
-              <li id="aboutme"><a href="#">SERVICES |</a></li>
-              <li id="aboutme"><a href="#">ABOUT ME |</a></li>
-              <li id="contact"><a href="#">CONTACT |</a></li>
+              <li id="expertise"><a href="#content"><span id="exp">EXPERTISE |</span>
+                <div><img src="images/EXPERTISE.png"></div>
+              </a>
+                </li>
+              <li id="services"><a href="#servicesvid"><span id="ser"> SERVICES |</span>
+                <div><img src="images/SERVICES.png"></div>
+              </a>
+            </li>
+              <li id="aboutme"><a href="#sarkssection"><span id="abo"> ABOUT ME |</span>
+                <div><img src="images/ABOUT.png"></div>
+              </a>
+            </li>
+              <li id="contact"><a href="#contactform"><span id="con">CONTACT |</span>
+              <div><img src="images/CONTACT.png"></div>
+              </a>
+            </li>
                 </ul>
-              </li>
-            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </nav>
@@ -52,6 +70,7 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="container">
       <section id="image" class="clearfix">
+
             
             <img src="images/sarkspic1.png" alt="picture" id="picture">
             
@@ -81,69 +100,104 @@
 </section>
 </div>
 
+
+
+
 <section>
+
+<div class="target" id="content">
+
+
      <!--  <div class="jumbotron"> -->
         <div class="mainbanner" class="container">
        <!--  <div class='col-md-6'> -->
 
 
 <section id="content">
-  <h1>EXPERTISE</h1>
+  <section id="expertise">
+  <img src="images/EXPERTISE.jpg" alt="expertisetext" id="expertisetext">
   
- <hr>
-  
-  <h2 id="question1">DIGITAL MARKETING STRATEGY <span id="drop1" class="glyphicon glyphicon-collapse-up "></span></h2>
-  <p id="answer1"><ul>DIGITAL MARKETING STRATEGY
-            <li>Email Marketing Planning and Implementation</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul></p>
-  <hr>
-  
-  <h2 id="question2">ECOMMERCE STRATEGY<span id="drop2" class="glyphicon glyphicon-collapse-up "></span></h2>
-  <p id="answer2"><ul>DIGITAL MARKETING STRATEGY
-            <li>Email Marketing Planning and Implementation</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul></p>
-  <hr>
+<br>
+<br> 
 
-    <h2 id="question3">CONTENT CREATION<span id="drop3" class="glyphicon glyphicon-collapse-up "></span></h2>
-  <p id="answer3"><ul>DIGITAL MARKETING STRATEGY
-            <li>Email Marketing Planning and Implementation</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul></p>
-  <hr>
 
-  <h2 id="question4">BUSINESS PLANNING
-    <span id="drop4" class="glyphicon glyphicon-collapse-up "></></h2>
-  <p id="answer4"><ul>DIGITAL MARKETING STRATEGY
+  <span><img src="images/ICON1.png" alt="icon1" id="icon1"></span>
+  <ul>
+            <li><strong>DIGITAL MARKETING STRATEGY</strong></li>
             <li>Email Marketing Planning and Implementation</li>
+            <li>Social Media Strategy</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul></p>
+            </ul>
+            <br>
+            <br>
+
+  <span><img src="images/ICON1.png" alt="icon1" id="icon1"></span>
+  <ul>
+            <li><strong>DIGITAL MARKETING STRATEGY</strong></li>
+            <li>Email Marketing Planning and Implementation</li>
+            <li>Social Media Strategy</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            </ul>
+            <br>
+            <br>
+
+  <span><img src="images/ICON1.png" alt="icon1" id="icon1"></span>
+  <ul>
+            <li><strong>DIGITAL MARKETING STRATEGY</strong></li>
+            <li>Email Marketing Planning and Implementation</li>
+            <li>Social Media Strategy</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            </ul>
+            <br>
+            <br>
+
+    <span><img src="images/ICON1.png" alt="icon1" id="icon1"></span>
+  <ul>
+            <li><strong>DIGITAL MARKETING STRATEGY</strong></li>
+            <li>Email Marketing Planning and Implementation</li>
+            <li>Social Media Strategy</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            </ul>
+            <br>
+            <br>
+
+
 </section>
-<hr>
-
-
-
-          
     </div>
-      </div>
 
 
-          <div class="holder">
-          <!-- <div class='col-md-6'> -->
+      <section class="expcon">
+<!-- <div class='col-md-6'> -->
+
+         <!--  <div class="holder">
           <div class="expertiseimg" id="info"> 
             <h3>SEE FULL PORTFOLIO</h3>
-          </div>
-          <img src="images/sarkslaptop.jpg" alt="expertise">
+          </div> -->
+    <div class="hoverContainer">
+      <div class="hover" id="ideasimg">
+        <img src="images/ideas.jpg" alt="ideas">
+      </div>
+
+      <div class="content">
+        <img src="images/sarkslaptop.jpg" alt="expertise"/> 
       </div>
     </div>
+
+
+          <!-- <img src="images/sarkslaptop.jpg" alt="expertise"> -->
+      </div>
 </section>
+
+  </div>
 
 
 
 <!-- SERVICES -->
+
 <div class="videocontainer">
-      <section id="services" class="clearfix">
+
+      <section id="servicesvid" class="clearfix">
+
 
         <video muted=”muted”preload="yes" autoplay="autoplay" loop="loop" width="100%" height="20%">
      
@@ -153,7 +207,7 @@
 </video>
 
 <div class="servicescopy">
-            <h3>SERVICES</h3>
+            <img src="images/SERVICES.png" alt="servicestext" id="servicestext">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       
@@ -180,7 +234,7 @@
 
           <img src="images/aboutme.jpg" alt="aboutme" id="aboutimg">
           <div class="sarkscopy">
-          <h1>ABOUT ME</h1>
+          <img src="images/ABOUT.png" alt="abouttext" id="abouttext">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </ul>
@@ -198,40 +252,30 @@
 
 
 <!-- <div class="container"> -->
+<section id="contactform">
 
     <form class="well form-horizontal" action=" " method="post"  id="contact_form">
 <fieldset>
 
 <!-- Form Name -->
-<legend>Get in CONTACT</legend>
+<legend>Get in <img src="images/CONTACT.png" alt="contacttext" id="contacttext"></legend>
 
 <!-- Text input-->
 
 <div class="form-group">
-  <label class="col-md-4 control-label">First Name</label>  
+  <label class="col-md-4 control-label"></label>  
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+  <input  name="first_name" placeholder="Name" class="form-control"  type="text">
     </div>
   </div>
 </div>
 
-<!-- Text input-->
-
-<div class="form-group">
-  <label class="col-md-4 control-label" >Last Name</label> 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
 
 <!-- Text input-->
        <div class="form-group">
-  <label class="col-md-4 control-label">E-Mail</label>  
+  <label class="col-md-4 control-label"></label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
@@ -241,14 +285,15 @@
 </div>
 
 
+
 <!-- Text input-->
        
 <div class="form-group">
-  <label class="col-md-4 control-label">Phone #</label>  
+  <label class="col-md-4 control-label"></label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="phone" placeholder="Mobile" class="form-control" type="text">
+  <input name="phone" placeholder="Mobile #" class="form-control" type="text">
     </div>
   </div>
 </div>
@@ -256,7 +301,7 @@
 <!-- Select Basic -->
    
 <div class="form-group"> 
-  <label class="col-md-4 control-label">Country</label>
+  <label class="col-md-4 control-label"></label>
     <div class="col-md-4 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
@@ -275,7 +320,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label">Website or Brand name</label>  
+  <label class="col-md-4 control-label"></label>  
    <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
@@ -287,7 +332,7 @@
 <!-- Text area -->
   
 <div class="form-group">
-  <label class="col-md-4 control-label">Message</label>
+  <label class="col-md-4 control-label"></label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -303,7 +348,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >Say Hello <span class="glyphicon glyphicon-send"></span></button>
+    <button type="submit" class="btn btn-warning" id="contactbutton">Say Hello <span class="glyphicon glyphicon-send"></span></button>
   </div>
 </div>
 
@@ -315,6 +360,7 @@
 
 
 <!-- END OF CONTACT FORM -->
+</section>
 
          
 
@@ -335,7 +381,7 @@
 <!--/*****************************************************************************/-->
   <div class="row">
     <div class="col-sm-6">
-        <h4>SARKS CONDENSED LOGO</h4>
+        <img src="images/SARKS-LOGO-S.png" alt="footerlogo" id="footerlogo">
         
         
         
@@ -419,11 +465,9 @@
 
 
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+        
         
     </body>
 </html>
